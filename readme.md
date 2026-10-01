@@ -1,4 +1,4 @@
-# FinOps AI Platform
+# FinOps Reconciliation Platform
 ### Financial Data Integration & Reconciliation Platform
 
 FinOps AI is an end-to-end data engineering project that simulates the financial data lifecycle of a B2B SaaS company across CRM, billing, payment processing, and accounting systems.
