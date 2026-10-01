@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table "finops"."analytics_test_data"."reconciliation_test_scenarios" ("scenario_name" text,"stripe_invoice_id" text,"quickbooks_invoice_override" integer)
+  ;
+    -- dbt seed --
+    
+          insert into "finops"."analytics_test_data"."reconciliation_test_scenarios" ("scenario_name", "stripe_invoice_id", "quickbooks_invoice_override") values
+          (%s,%s,%s)
+      
+
+;
+  

@@ -1,0 +1,25 @@
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select is_recorded_in_quickbooks
+from "finops"."analytics_core"."fact_payments"
+where is_recorded_in_quickbooks is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test

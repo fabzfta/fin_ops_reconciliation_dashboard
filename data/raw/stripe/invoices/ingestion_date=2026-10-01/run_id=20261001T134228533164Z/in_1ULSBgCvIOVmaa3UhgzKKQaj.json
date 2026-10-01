@@ -1,0 +1,154 @@
+{
+  "id": "in_1ULSBgCvIOVmaa3UhgzKKQaj",
+  "object": "invoice",
+  "account_country": "BR",
+  "account_name": "Área restrita de Bluemetrics",
+  "account_tax_ids": null,
+  "amount_due": 500000,
+  "amount_overpaid": 0,
+  "amount_paid": 500000,
+  "amount_remaining": 0,
+  "amount_shipping": 0,
+  "application": null,
+  "attempt_count": 1,
+  "attempted": true,
+  "auto_advance": false,
+  "automatic_tax": {
+    "disabled_reason": null,
+    "enabled": false,
+    "liability": null,
+    "provider": null,
+    "status": null
+  },
+  "automatically_finalizes_at": null,
+  "billing_reason": "subscription_create",
+  "collection_method": "charge_automatically",
+  "created": 1790792704,
+  "currency": "usd",
+  "custom_fields": null,
+  "customer": "cus_VMAM1HOvvtovjS",
+  "customer_account": null,
+  "customer_address": null,
+  "customer_email": "sarah.johnson@acme.example",
+  "customer_name": "Acme Corporation",
+  "customer_phone": null,
+  "customer_shipping": null,
+  "customer_tax_exempt": "none",
+  "customer_tax_ids": [],
+  "default_payment_method": null,
+  "default_source": null,
+  "default_tax_rates": [],
+  "description": null,
+  "discounts": [],
+  "due_date": null,
+  "effective_at": 1790792704,
+  "ending_balance": 0,
+  "footer": null,
+  "from_invoice": null,
+  "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UJYmOCvIOVmaa3U/test_YWNjdF8xVUpZbU9DdklPVm1hYTNVLF9WTUFXazNLQWQzdnlQQ3FOVktnRGRRdTFMTTdzNDM0LDE4MTQwMjk2MQ0200k1YJytXK?s=ap",
+  "invoice_pdf": "https://pay.stripe.com/invoice/acct_1UJYmOCvIOVmaa3U/test_YWNjdF8xVUpZbU9DdklPVm1hYTNVLF9WTUFXazNLQWQzdnlQQ3FOVktnRGRRdTFMTTdzNDM0LDE4MTQwMjk2MQ0200k1YJytXK/pdf?s=ap",
+  "issuer": {
+    "type": "self"
+  },
+  "last_finalization_error": null,
+  "latest_revision": null,
+  "lines": {
+    "object": "list",
+    "data": [
+      {
+        "id": "il_1ULSBgCvIOVmaa3UmpdJerMD",
+        "object": "line_item",
+        "amount": 500000,
+        "currency": "usd",
+        "description": "1 × NovaTech Enterprise (at $5,000.00 / month)",
+        "discount_amounts": [],
+        "discountable": true,
+        "discounts": [],
+        "invoice": "in_1ULSBgCvIOVmaa3UhgzKKQaj",
+        "livemode": false,
+        "metadata": {
+          "hubspot_deal_id": "65516507983"
+        },
+        "parent": {
+          "invoice_item_details": null,
+          "subscription_item_details": {
+            "invoice_item": null,
+            "proration": false,
+            "proration_details": {
+              "credited_items": null
+            },
+            "subscription": "sub_1ULSBgCvIOVmaa3Ukf412nh5",
+            "subscription_item": "si_VMAWGpJd8cnNSI"
+          },
+          "type": "subscription_item_details"
+        },
+        "period": {
+          "end": 1793384704,
+          "start": 1790792704
+        },
+        "pretax_credit_amounts": [],
+        "pricing": {
+          "price_details": {
+            "price": "price_1ULRl5CvIOVmaa3UnmtwyHFv",
+            "product": "prod_VMA5ZXkDnOX9rq"
+          },
+          "type": "price_details",
+          "unit_amount_decimal": "500000"
+        },
+        "quantity": 1,
+        "quantity_decimal": "1",
+        "subtotal": 500000,
+        "taxes": []
+      }
+    ],
+    "has_more": false,
+    "total_count": 1,
+    "url": "/v1/invoices/in_1ULSBgCvIOVmaa3UhgzKKQaj/lines"
+  },
+  "livemode": false,
+  "metadata": {},
+  "next_payment_attempt": null,
+  "number": "DCJ2M8MB-0002",
+  "on_behalf_of": null,
+  "parent": {
+    "quote_details": null,
+    "subscription_details": {
+      "metadata": {
+        "hubspot_deal_id": "65516507983"
+      },
+      "subscription": "sub_1ULSBgCvIOVmaa3Ukf412nh5"
+    },
+    "type": "subscription_details"
+  },
+  "payment_settings": {
+    "default_mandate": null,
+    "payment_method_options": null,
+    "payment_method_types": null
+  },
+  "period_end": 1790792704,
+  "period_start": 1790792704,
+  "post_payment_credit_notes_amount": 0,
+  "pre_payment_credit_notes_amount": 0,
+  "receipt_number": null,
+  "rendering": null,
+  "shipping_cost": null,
+  "shipping_details": null,
+  "starting_balance": 0,
+  "statement_descriptor": null,
+  "status": "paid",
+  "status_transitions": {
+    "finalized_at": 1790792704,
+    "marked_uncollectible_at": null,
+    "paid_at": 1790792704,
+    "voided_at": null
+  },
+  "subtotal": 500000,
+  "subtotal_excluding_tax": 500000,
+  "test_clock": null,
+  "total": 500000,
+  "total_discount_amounts": [],
+  "total_excluding_tax": 500000,
+  "total_pretax_credit_amounts": [],
+  "total_taxes": [],
+  "webhooks_delivered_at": 1790792704
+}

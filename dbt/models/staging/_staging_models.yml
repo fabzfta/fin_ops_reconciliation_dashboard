@@ -1,0 +1,257 @@
+version: 2
+
+models:
+
+  # ---------------------------------------------------------------------------
+  # HubSpot
+  # ---------------------------------------------------------------------------
+
+  - name: stg_hubspot_companies
+    description: Cleaned HubSpot company records.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: hubspot_company_id
+        tests:
+          - not_null
+
+      - name: company_name
+        tests:
+          - not_null
+
+
+  - name: stg_hubspot_contacts
+    description: Cleaned HubSpot contact records.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: hubspot_contact_id
+        tests:
+          - not_null
+
+      - name: email
+        tests:
+          - not_null
+
+
+  - name: stg_hubspot_deals
+    description: Cleaned HubSpot deal records.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: hubspot_deal_id
+        tests:
+          - not_null
+
+      - name: deal_amount
+        tests:
+          - not_null
+
+      - name: deal_stage
+        tests:
+          - not_null
+
+
+  # ---------------------------------------------------------------------------
+  # Stripe
+  # ---------------------------------------------------------------------------
+
+  - name: stg_stripe_customers
+    description: Cleaned Stripe customer records.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_customer_id
+        tests:
+          - not_null
+
+      - name: hubspot_company_id
+        tests:
+          - not_null
+
+
+  - name: stg_stripe_invoices
+    description: Stripe invoices with monetary values normalized from minor units.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_invoice_id
+        tests:
+          - not_null
+
+      - name: stripe_customer_id
+        tests:
+          - not_null
+
+      - name: total_amount
+        tests:
+          - not_null
+
+      - name: currency
+        tests:
+          - not_null
+
+
+  - name: stg_stripe_payment_intent
+    description: Stripe payment intents normalized for analytical use.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_payment_intent_id
+        tests:
+          - not_null
+
+      - name: stripe_invoice_id
+        tests:
+          - not_null
+
+      - name: amount_received
+        tests:
+          - not_null
+
+      - name: status
+        tests:
+          - not_null
+
+
+  - name: stg_stripe_charges
+    description: Stripe charges linking payment intents to balance transactions.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_charge_id
+        tests:
+          - not_null
+
+      - name: stripe_payment_intent_id
+        tests:
+          - not_null
+
+      - name: stripe_balance_transaction_id
+        tests:
+          - not_null
+
+
+  - name: stg_stripe_balance_transactions
+    description: Stripe settlement transactions including gross, fees, net and FX.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_balance_transaction_id
+        tests:
+          - not_null
+
+      - name: stripe_charge_id
+        tests:
+          - not_null
+
+      - name: settlement_gross
+        tests:
+          - not_null
+
+      - name: settlement_fee
+        tests:
+          - not_null
+
+      - name: settlement_net
+        tests:
+          - not_null
+
+      - name: settlement_currency
+        tests:
+          - not_null
+
+
+  # ---------------------------------------------------------------------------
+  # QuickBooks
+  # ---------------------------------------------------------------------------
+
+  - name: stg_quickbooks_customers
+    description: Cleaned QuickBooks customer records.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: quickbooks_customer_id
+        tests:
+          - not_null
+
+      - name: customer_name
+        tests:
+          - not_null
+
+
+  - name: stg_quickbooks_invoices
+    description: QuickBooks invoices including the source Stripe invoice reference.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: quickbooks_invoice_id
+        tests:
+          - not_null
+
+      - name: quickbooks_customer_id
+        tests:
+          - not_null
+
+      - name: stripe_invoice_id
+        tests:
+          - not_null
+
+      - name: total_amount
+        tests:
+          - not_null
+
+
+  - name: stg_quickbooks_payments
+    description: QuickBooks payments including the source Stripe payment intent reference.
+    columns:
+      - name: ingestion_id
+        tests:
+          - not_null
+          - unique
+
+      - name: quickbooks_payment_id
+        tests:
+          - not_null
+
+      - name: quickbooks_invoice_id
+        tests:
+          - not_null
+
+      - name: stripe_payment_intent_id
+        tests:
+          - not_null
+
+      - name: amount
+        tests:
+          - not_null

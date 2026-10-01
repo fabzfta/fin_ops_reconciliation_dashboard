@@ -1,0 +1,11 @@
+
+    
+    
+
+
+
+select quickbooks_payment_id
+from "finops"."analytics_staging"."stg_quickbooks_payments"
+where quickbooks_payment_id is null
+
+

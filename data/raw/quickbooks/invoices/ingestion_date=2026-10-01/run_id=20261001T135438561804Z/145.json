@@ -1,0 +1,82 @@
+{
+  "AllowIPNPayment": false,
+  "AllowOnlinePayment": true,
+  "AllowOnlineCreditCardPayment": true,
+  "AllowOnlineACHPayment": true,
+  "AllowOnlinePayPalPayment": false,
+  "AllowOnlineAffirmPayment": false,
+  "domain": "QBO",
+  "sparse": false,
+  "Id": "145",
+  "SyncToken": "1",
+  "MetaData": {
+    "CreateTime": "2026-10-01T01:40:49-07:00",
+    "LastModifiedByRef": {
+      "value": "9341458164802463"
+    },
+    "LastUpdatedTime": "2026-10-01T01:51:10-07:00"
+  },
+  "CustomField": [],
+  "DocNumber": "1038",
+  "TxnDate": "2026-09-30",
+  "CurrencyRef": {
+    "value": "USD",
+    "name": "United States Dollar"
+  },
+  "PrivateNote": "Stripe Invoice: in_1ULSBgCvIOVmaa3UhgzKKQaj",
+  "LinkedTxn": [
+    {
+      "TxnId": "146",
+      "TxnType": "Payment"
+    }
+  ],
+  "Line": [
+    {
+      "Id": "1",
+      "LineNum": 1,
+      "Description": "NovaTech Enterprise monthly subscription",
+      "Amount": 5000.0,
+      "DetailType": "SalesItemLineDetail",
+      "SalesItemLineDetail": {
+        "ItemRef": {
+          "value": "19",
+          "name": "NovaTech Enterprise Subscription"
+        },
+        "UnitPrice": 5000,
+        "Qty": 1,
+        "ItemAccountRef": {
+          "value": "1150040002",
+          "name": "Subscription Revenue"
+        },
+        "TaxCodeRef": {
+          "value": "NON"
+        }
+      },
+      "CustomExtensions": []
+    },
+    {
+      "Amount": 5000.0,
+      "DetailType": "SubTotalLineDetail",
+      "SubTotalLineDetail": {}
+    }
+  ],
+  "TxnTaxDetail": {
+    "TotalTax": 0
+  },
+  "CustomerRef": {
+    "value": "58",
+    "name": "Acme Corporation"
+  },
+  "FreeFormAddress": false,
+  "ShipFromAddr": {
+    "Id": "96",
+    "Line1": "123 Sierra Way",
+    "Line2": "San Pablo, CA  87999"
+  },
+  "DueDate": "2026-10-30",
+  "TotalAmt": 5000.0,
+  "ApplyTaxAfterDiscount": false,
+  "PrintStatus": "NeedToPrint",
+  "EmailStatus": "NotSet",
+  "Balance": 0
+}

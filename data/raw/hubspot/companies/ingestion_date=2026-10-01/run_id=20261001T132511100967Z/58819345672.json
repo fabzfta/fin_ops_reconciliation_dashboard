@@ -1,0 +1,18 @@
+{
+  "id": "58819345672",
+  "properties": {
+    "city": "New York",
+    "country": "United States",
+    "createdate": "2026-09-30T13:24:00.231Z",
+    "domain": "acme.example",
+    "hs_lastmodifieddate": "2026-09-30T14:41:01.295Z",
+    "hs_object_id": "58819345672",
+    "industry": null,
+    "name": "Acme Corporation",
+    "state": "NY"
+  },
+  "createdAt": "2026-09-30T13:24:00.231Z",
+  "updatedAt": "2026-09-30T14:41:01.295Z",
+  "archived": false,
+  "url": "https://app.hubspot.com/contacts/52105672/record/0-2/58819345672"
+}

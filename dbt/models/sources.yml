@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: >
+      Immutable RAW records ingested from external operational systems.
+
+    tables:
+      - name: api_records
+        description: >
+          Generic JSONB landing table containing API records from
+          HubSpot, Stripe, and QuickBooks.
+
+        columns:
+          - name: ingestion_id
+            description: Unique identifier generated when the RAW record is loaded.
+            tests:
+              - not_null
+              - unique
+
+          - name: source_system
+            description: Source system that produced the record.
+            tests:
+              - not_null
+
+          - name: entity_type
+            description: Type of entity extracted from the source system.
+            tests:
+              - not_null
+
+          - name: source_record_id
+            description: Original identifier of the record in the source system.
+            tests:
+              - not_null
+
+          - name: run_id
+            description: Identifier of the ingestion execution.
+            tests:
+              - not_null
+
+          - name: payload
+            description: Original API response stored as JSONB.
+            tests:
+              - not_null

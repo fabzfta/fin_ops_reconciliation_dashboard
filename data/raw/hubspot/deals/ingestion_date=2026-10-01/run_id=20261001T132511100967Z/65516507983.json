@@ -1,0 +1,17 @@
+{
+  "id": "65516507983",
+  "properties": {
+    "amount": "60000",
+    "closedate": "2026-09-30T14:40:52.080Z",
+    "createdate": "2026-09-30T14:18:26.564Z",
+    "dealname": "Acme Corporation - Enterprise Plan",
+    "dealstage": "closedwon",
+    "hs_lastmodifieddate": "2026-09-30T14:40:58.847Z",
+    "hs_object_id": "65516507983",
+    "pipeline": "default"
+  },
+  "createdAt": "2026-09-30T14:18:26.564Z",
+  "updatedAt": "2026-09-30T14:40:58.847Z",
+  "archived": false,
+  "url": "https://app.hubspot.com/contacts/52105672/record/0-3/65516507983"
+}

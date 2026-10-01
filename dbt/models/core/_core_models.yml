@@ -1,0 +1,207 @@
+version: 2
+
+models:
+  - name: identity_map
+    description: >
+      Cross-system identity mapping between internal client identifiers
+      and external identifiers from HubSpot, Stripe, and QuickBooks.
+
+    columns:
+      - name: client_id
+        tests:
+          - not_null
+
+      - name: entity_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['client']
+
+      - name: source_system
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['hubspot', 'stripe', 'quickbooks']
+
+      - name: external_id
+        tests:
+          - not_null
+
+  - name: dim_clients
+    description: >
+      Canonical client dimension combining CRM identity with billing
+      attributes across HubSpot, Stripe, and QuickBooks.
+
+    columns:
+      - name: client_id
+        tests:
+          - not_null
+          - unique
+
+      - name: hubspot_company_id
+        tests:
+          - not_null
+          - unique
+
+      - name: company_name
+        tests:
+          - not_null
+
+  - name: fact_invoices
+    description: >
+      Canonical invoice fact reconciling Stripe billing invoices with
+      their corresponding QuickBooks accounting invoices.
+
+    columns:
+      - name: invoice_id
+        tests:
+          - not_null
+          - unique
+
+      - name: client_id
+        tests:
+          - not_null
+
+      - name: stripe_invoice_id
+        tests:
+          - not_null
+          - unique
+
+      - name: total_amount
+        tests:
+          - not_null
+
+      - name: currency
+        tests:
+          - not_null
+
+      - name: is_synced_to_quickbooks
+        tests:
+          - not_null
+
+      - name: amount_reconciled
+        tests:
+          - not_null
+
+  - name: fact_payments
+    description: >
+      Canonical payment fact reconciling Stripe PaymentIntents with
+      their corresponding QuickBooks payments and business invoices.
+
+    columns:
+      - name: payment_id
+        tests:
+          - not_null
+          - unique
+
+      - name: client_id
+        tests:
+          - not_null
+
+      - name: invoice_id
+        tests:
+          - not_null
+
+      - name: stripe_payment_intent_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_charge_id
+        tests:
+          - not_null
+
+      - name: payment_status
+        tests:
+          - not_null
+
+      - name: payment_amount
+        tests:
+          - not_null
+
+      - name: amount_received
+        tests:
+          - not_null
+
+      - name: currency
+        tests:
+          - not_null
+
+      - name: is_recorded_in_quickbooks
+        tests:
+          - not_null
+
+      - name: amount_reconciled
+        tests:
+          - not_null
+          
+  - name: fact_stripe_transactions
+    description: >
+      Stripe processor transaction fact linking customer payments to
+      settlement amounts, processing fees, and currency conversion.
+
+    columns:
+      - name: stripe_transaction_id
+        tests:
+          - not_null
+          - unique
+
+      - name: client_id
+        tests:
+          - not_null
+
+      - name: invoice_id
+        tests:
+          - not_null
+
+      - name: payment_id
+        tests:
+          - not_null
+
+      - name: stripe_payment_intent_id
+        tests:
+          - not_null
+
+      - name: stripe_charge_id
+        tests:
+          - not_null
+          - unique
+
+      - name: stripe_balance_transaction_id
+        tests:
+          - not_null
+          - unique
+
+      - name: charge_currency
+        tests:
+          - not_null
+
+      - name: charge_amount
+        tests:
+          - not_null
+
+      - name: settlement_currency
+        tests:
+          - not_null
+
+      - name: settlement_gross
+        tests:
+          - not_null
+
+      - name: settlement_fee
+        tests:
+          - not_null
+
+      - name: settlement_net
+        tests:
+          - not_null
+
+      - name: settlement_reconciled
+        tests:
+          - not_null
+
+      - name: has_currency_conversion
+        tests:
+          - not_null

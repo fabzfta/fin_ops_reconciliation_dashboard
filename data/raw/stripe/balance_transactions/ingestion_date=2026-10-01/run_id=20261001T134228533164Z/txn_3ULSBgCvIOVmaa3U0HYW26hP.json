@@ -1,0 +1,33 @@
+{
+  "id": "txn_3ULSBgCvIOVmaa3U0HYW26hP",
+  "object": "balance_transaction",
+  "amount": 2583830,
+  "available_on": 1791331200,
+  "balance_type": "payments",
+  "created": 1790792705,
+  "currency": "brl",
+  "description": "Subscription creation",
+  "exchange_rate": 5.16766,
+  "fee": 154811,
+  "fee_details": [
+    {
+      "amount": 103134,
+      "application": null,
+      "currency": "brl",
+      "description": "Stripe processing fees",
+      "type": "stripe_fee"
+    },
+    {
+      "amount": 51677,
+      "application": null,
+      "currency": "brl",
+      "description": "Stripe currency conversion fee",
+      "type": "stripe_fee"
+    }
+  ],
+  "net": 2429019,
+  "reporting_category": "charge",
+  "source": "ch_3ULSBgCvIOVmaa3U0x5OFv9d",
+  "status": "pending",
+  "type": "charge"
+}

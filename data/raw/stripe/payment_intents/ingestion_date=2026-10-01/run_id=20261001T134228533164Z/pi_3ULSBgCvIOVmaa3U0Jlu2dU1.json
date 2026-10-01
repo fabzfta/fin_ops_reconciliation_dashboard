@@ -1,0 +1,64 @@
+{
+  "id": "pi_3ULSBgCvIOVmaa3U0Jlu2dU1",
+  "object": "payment_intent",
+  "allowed_payment_method_types": null,
+  "amount": 500000,
+  "amount_capturable": 0,
+  "amount_details": {
+    "tip": {}
+  },
+  "amount_received": 500000,
+  "application": null,
+  "application_fee_amount": null,
+  "automatic_payment_methods": null,
+  "canceled_at": null,
+  "cancellation_reason": null,
+  "capture_method": "automatic",
+  "client_secret": "pi_3ULSBgCvIOVmaa3U0Jlu2dU1_secret_ag0bne37huV3UI3h6n2MSAVRS",
+  "confirmation_method": "automatic",
+  "created": 1790792704,
+  "currency": "usd",
+  "customer": "cus_VMAM1HOvvtovjS",
+  "customer_account": null,
+  "description": "Subscription creation",
+  "excluded_payment_method_types": null,
+  "last_payment_error": null,
+  "latest_charge": "ch_3ULSBgCvIOVmaa3U0x5OFv9d",
+  "livemode": false,
+  "managed_payments": {
+    "enabled": false
+  },
+  "metadata": {},
+  "next_action": null,
+  "on_behalf_of": null,
+  "payment_details": {
+    "customer_reference": null,
+    "order_reference": "in_1ULSBgCvIOVmaa3UhgzKKQaj"
+  },
+  "payment_method": "pm_1ULSBdCvIOVmaa3URZ3f8pPG",
+  "payment_method_configuration_details": null,
+  "payment_method_options": {
+    "card": {
+      "installments": null,
+      "mandate_options": null,
+      "network": null,
+      "request_three_d_secure": "automatic"
+    }
+  },
+  "payment_method_types": [
+    "card"
+  ],
+  "payment_record": null,
+  "processing": null,
+  "receipt_email": null,
+  "review": null,
+  "setup_future_usage": "off_session",
+  "shared_payment_granted_token": null,
+  "shipping": null,
+  "source": null,
+  "statement_descriptor": null,
+  "statement_descriptor_suffix": null,
+  "status": "succeeded",
+  "transfer_data": null,
+  "transfer_group": null
+}

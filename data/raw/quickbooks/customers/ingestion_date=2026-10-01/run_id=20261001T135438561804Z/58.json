@@ -1,0 +1,36 @@
+{
+  "Taxable": true,
+  "ShipAddr": {
+    "Id": "4"
+  },
+  "Job": false,
+  "BillWithParent": false,
+  "Balance": 0.0,
+  "BalanceWithJobs": 0.0,
+  "CurrencyRef": {
+    "value": "USD",
+    "name": "United States Dollar"
+  },
+  "PreferredDeliveryMethod": "Print",
+  "IsProject": false,
+  "domain": "QBO",
+  "sparse": false,
+  "Id": "58",
+  "SyncToken": "0",
+  "MetaData": {
+    "CreateTime": "2026-09-30T13:00:19-07:00",
+    "LastUpdatedTime": "2026-10-01T01:51:10-07:00"
+  },
+  "FullyQualifiedName": "Acme Corporation",
+  "CompanyName": "Acme Corporation",
+  "DisplayName": "Acme Corporation",
+  "PrintOnCheckName": "Acme Corporation",
+  "Active": true,
+  "V4IDPseudonym": "0020988a88cfe9bbeb489e862462b2cf5a9cf0",
+  "PrimaryEmailAddr": {
+    "Address": "sarah.johnson@acme.example"
+  },
+  "DefaultTaxCodeRef": {
+    "value": "2"
+  }
+}

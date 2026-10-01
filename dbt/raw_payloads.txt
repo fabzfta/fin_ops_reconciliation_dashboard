@@ -1,0 +1,686 @@
+=== SOURCE: hubspot | ENTITY: companies | ID: 58819345672 ===
+{
+    "id": "58819345672",
+    "url": "https://app.hubspot.com/contacts/52105672/record/0-2/58819345672",
+    "archived": false,
+    "createdAt": "2026-09-30T13:24:00.231Z",
+    "updatedAt": "2026-09-30T14:41:01.295Z",
+    "properties": {
+        "city": "New York",
+        "name": "Acme Corporation",
+        "state": "NY",
+        "domain": "acme.example",
+        "country": "United States",
+        "industry": null,
+        "createdate": "2026-09-30T13:24:00.231Z",
+        "hs_object_id": "58819345672",
+        "hs_lastmodifieddate": "2026-09-30T14:41:01.295Z"
+    }
+}
+
+=== SOURCE: hubspot | ENTITY: contacts | ID: 252076728918 ===
+{
+    "id": "252076728918",
+    "url": "https://app.hubspot.com/contacts/52105672/record/0-1/252076728918",
+    "archived": false,
+    "createdAt": "2026-09-30T13:42:01.585Z",
+    "updatedAt": "2026-09-30T21:12:33.793Z",
+    "properties": {
+        "email": "seuemail+sarah.acme@gmail.com",
+        "phone": null,
+        "jobtitle": "Chief Financial Officer",
+        "lastname": "Johnson",
+        "firstname": "Sarah",
+        "createdate": "2026-09-30T13:42:01.585Z",
+        "hs_object_id": "252076728918",
+        "lastmodifieddate": "2026-09-30T21:12:33.793Z"
+    }
+}
+
+=== SOURCE: hubspot | ENTITY: deals | ID: 65516507983 ===
+{
+    "id": "65516507983",
+    "url": "https://app.hubspot.com/contacts/52105672/record/0-3/65516507983",
+    "archived": false,
+    "createdAt": "2026-09-30T14:18:26.564Z",
+    "updatedAt": "2026-09-30T14:40:58.847Z",
+    "properties": {
+        "amount": "60000",
+        "dealname": "Acme Corporation - Enterprise Plan",
+        "pipeline": "default",
+        "closedate": "2026-09-30T14:40:52.080Z",
+        "dealstage": "closedwon",
+        "createdate": "2026-09-30T14:18:26.564Z",
+        "hs_object_id": "65516507983",
+        "hs_lastmodifieddate": "2026-09-30T14:40:58.847Z"
+    }
+}
+
+=== SOURCE: quickbooks | ENTITY: customers | ID: 58 ===
+{
+    "Id": "58",
+    "Job": false,
+    "Active": true,
+    "domain": "QBO",
+    "sparse": false,
+    "Balance": 0.0,
+    "Taxable": true,
+    "MetaData": {
+        "CreateTime": "2026-09-30T13:00:19-07:00",
+        "LastUpdatedTime": "2026-10-01T01:51:10-07:00"
+    },
+    "ShipAddr": {
+        "Id": "4"
+    },
+    "IsProject": false,
+    "SyncToken": "0",
+    "CompanyName": "Acme Corporation",
+    "CurrencyRef": {
+        "name": "United States Dollar",
+        "value": "USD"
+    },
+    "DisplayName": "Acme Corporation",
+    "V4IDPseudonym": "0020988a88cfe9bbeb489e862462b2cf5a9cf0",
+    "BillWithParent": false,
+    "BalanceWithJobs": 0.0,
+    "PrimaryEmailAddr": {
+        "Address": "sarah.johnson@acme.example"
+    },
+    "PrintOnCheckName": "Acme Corporation",
+    "DefaultTaxCodeRef": {
+        "value": "2"
+    },
+    "FullyQualifiedName": "Acme Corporation",
+    "PreferredDeliveryMethod": "Print"
+}
+
+=== SOURCE: quickbooks | ENTITY: invoices | ID: 145 ===
+{
+    "Id": "145",
+    "Line": [
+        {
+            "Id": "1",
+            "Amount": 5000.0,
+            "LineNum": 1,
+            "DetailType": "SalesItemLineDetail",
+            "Description": "NovaTech Enterprise monthly subscription",
+            "CustomExtensions": [
+            ],
+            "SalesItemLineDetail": {
+                "Qty": 1,
+                "ItemRef": {
+                    "name": "NovaTech Enterprise Subscription",
+                    "value": "19"
+                },
+                "UnitPrice": 5000,
+                "TaxCodeRef": {
+                    "value": "NON"
+                },
+                "ItemAccountRef": {
+                    "name": "Subscription Revenue",
+                    "value": "1150040002"
+                }
+            }
+        },
+        {
+            "Amount": 5000.0,
+            "DetailType": "SubTotalLineDetail",
+            "SubTotalLineDetail": {
+            }
+        }
+    ],
+    "domain": "QBO",
+    "sparse": false,
+    "Balance": 0,
+    "DueDate": "2026-10-30",
+    "TxnDate": "2026-09-30",
+    "MetaData": {
+        "CreateTime": "2026-10-01T01:40:49-07:00",
+        "LastUpdatedTime": "2026-10-01T01:51:10-07:00",
+        "LastModifiedByRef": {
+            "value": "9341458164802463"
+        }
+    },
+    "TotalAmt": 5000.0,
+    "DocNumber": "1038",
+    "LinkedTxn": [
+        {
+            "TxnId": "146",
+            "TxnType": "Payment"
+        }
+    ],
+    "SyncToken": "1",
+    "CurrencyRef": {
+        "name": "United States Dollar",
+        "value": "USD"
+    },
+    "CustomField": [
+    ],
+    "CustomerRef": {
+        "name": "Acme Corporation",
+        "value": "58"
+    },
+    "EmailStatus": "NotSet",
+    "PrintStatus": "NeedToPrint",
+    "PrivateNote": "Stripe Invoice: in_1ULSBgCvIOVmaa3UhgzKKQaj",
+    "ShipFromAddr": {
+        "Id": "96",
+        "Line1": "123 Sierra Way",
+        "Line2": "San Pablo, CA  87999"
+    },
+    "TxnTaxDetail": {
+        "TotalTax": 0
+    },
+    "AllowIPNPayment": false,
+    "FreeFormAddress": false,
+    "AllowOnlinePayment": true,
+    "AllowOnlineACHPayment": true,
+    "ApplyTaxAfterDiscount": false,
+    "AllowOnlineAffirmPayment": false,
+    "AllowOnlinePayPalPayment": false,
+    "AllowOnlineCreditCardPayment": true
+}
+
+=== SOURCE: quickbooks | ENTITY: payments | ID: 146 ===
+{
+    "Id": "146",
+    "Line": [
+        {
+            "Amount": 5000.0,
+            "LineEx": {
+                "any": [
+                    {
+                        "nil": false,
+                        "name": "{http://schema.intuit.com/finance/v3}NameValue",
+                        "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+                        "value": {
+                            "Name": "txnId",
+                            "Value": "145"
+                        },
+                        "globalScope": true,
+                        "declaredType": "com.intuit.schema.finance.v3.NameValue",
+                        "typeSubstituted": false
+                    },
+                    {
+                        "nil": false,
+                        "name": "{http://schema.intuit.com/finance/v3}NameValue",
+                        "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+                        "value": {
+                            "Name": "txnOpenBalance",
+                            "Value": "5000.00"
+                        },
+                        "globalScope": true,
+                        "declaredType": "com.intuit.schema.finance.v3.NameValue",
+                        "typeSubstituted": false
+                    },
+                    {
+                        "nil": false,
+                        "name": "{http://schema.intuit.com/finance/v3}NameValue",
+                        "scope": "javax.xml.bind.JAXBElement$GlobalScope",
+                        "value": {
+                            "Name": "txnReferenceNumber",
+                            "Value": "1038"
+                        },
+                        "globalScope": true,
+                        "declaredType": "com.intuit.schema.finance.v3.NameValue",
+                        "typeSubstituted": false
+                    }
+                ]
+            },
+            "LinkedTxn": [
+                {
+                    "TxnId": "145",
+                    "TxnType": "Invoice"
+                }
+            ]
+        }
+    ],
+    "domain": "QBO",
+    "sparse": false,
+    "TxnDate": "2026-09-30",
+    "MetaData": {
+        "CreateTime": "2026-10-01T01:51:10-07:00",
+        "LastUpdatedTime": "2026-10-01T01:51:10-07:00"
+    },
+    "TotalAmt": 5000.0,
+    "SyncToken": "0",
+    "CurrencyRef": {
+        "name": "United States Dollar",
+        "value": "USD"
+    },
+    "CustomerRef": {
+        "name": "Acme Corporation",
+        "value": "58"
+    },
+    "PrivateNote": "Stripe PaymentIntent: pi_3ULSBgCvIOVmaa3U0Jlu2dU1",
+    "UnappliedAmt": 0,
+    "ProcessPayment": false,
+    "DepositToAccountRef": {
+        "value": "4"
+    }
+}
+
+=== SOURCE: stripe | ENTITY: balance_transactions | ID: txn_3ULSBgCvIOVmaa3U0HYW26hP ===
+{
+    "id": "txn_3ULSBgCvIOVmaa3U0HYW26hP",
+    "fee": 154811,
+    "net": 2429019,
+    "type": "charge",
+    "amount": 2583830,
+    "object": "balance_transaction",
+    "source": "ch_3ULSBgCvIOVmaa3U0x5OFv9d",
+    "status": "pending",
+    "created": 1790792705,
+    "currency": "brl",
+    "description": "Subscription creation",
+    "fee_details": [
+        {
+            "type": "stripe_fee",
+            "amount": 103134,
+            "currency": "brl",
+            "application": null,
+            "description": "Stripe processing fees"
+        },
+        {
+            "type": "stripe_fee",
+            "amount": 51677,
+            "currency": "brl",
+            "application": null,
+            "description": "Stripe currency conversion fee"
+        }
+    ],
+    "available_on": 1791331200,
+    "balance_type": "payments",
+    "exchange_rate": 5.16766,
+    "reporting_category": "charge"
+}
+
+=== SOURCE: stripe | ENTITY: charges | ID: ch_3ULSBgCvIOVmaa3U0x5OFv9d ===
+{
+    "id": "ch_3ULSBgCvIOVmaa3U0x5OFv9d",
+    "paid": true,
+    "order": null,
+    "amount": 500000,
+    "object": "charge",
+    "review": null,
+    "source": null,
+    "status": "succeeded",
+    "created": 1790792705,
+    "dispute": null,
+    "outcome": {
+        "type": "authorized",
+        "reason": null,
+        "risk_level": "normal",
+        "risk_score": 59,
+        "advice_code": null,
+        "network_status": "approved_by_network",
+        "seller_message": "Payment complete.",
+        "network_advice_code": null,
+        "network_decline_code": null
+    },
+    "captured": true,
+    "currency": "usd",
+    "customer": "cus_VMAM1HOvvtovjS",
+    "disputed": false,
+    "livemode": false,
+    "metadata": {
+    },
+    "refunded": false,
+    "shipping": null,
+    "application": null,
+    "description": "Subscription creation",
+    "destination": null,
+    "receipt_url": "https://pay.stripe.com/receipts/invoices/CAcaFwoVYWNjdF8xVUpZbU9DdklPVm1hYTNVKNLG-dUGMgZiq6yVuFg6LBbXjL6GsY051P1DJvzYU7OnwX0xT4lXek2VJlg4feIRzZfd3JrRp5wEjUlf?s=ap",
+    "failure_code": null,
+    "on_behalf_of": null,
+    "fraud_details": {
+    },
+    "radar_options": {
+    },
+    "receipt_email": null,
+    "transfer_data": null,
+    "payment_intent": "pi_3ULSBgCvIOVmaa3U0Jlu2dU1",
+    "payment_method": "pm_1ULSBdCvIOVmaa3URZ3f8pPG",
+    "receipt_number": null,
+    "transfer_group": null,
+    "amount_captured": 500000,
+    "amount_refunded": 0,
+    "application_fee": null,
+    "billing_details": {
+        "name": null,
+        "email": null,
+        "phone": null,
+        "tax_id": null,
+        "address": {
+            "city": null,
+            "line1": null,
+            "line2": null,
+            "state": null,
+            "country": null,
+            "postal_code": null
+        }
+    },
+    "failure_message": null,
+    "source_transfer": null,
+    "balance_transaction": "txn_3ULSBgCvIOVmaa3U0HYW26hP",
+    "statement_descriptor": null,
+    "application_fee_amount": null,
+    "payment_method_details": {
+        "card": {
+            "brand": "visa",
+            "last4": "4242",
+            "checks": {
+                "cvc_check": "pass",
+                "address_line1_check": null,
+                "address_postal_code_check": null
+            },
+            "wallet": null,
+            "country": "US",
+            "funding": "credit",
+            "mandate": null,
+            "network": "visa",
+            "exp_year": 2027,
+            "exp_month": 9,
+            "fingerprint": "J8P5xJ14ou4vXhnS",
+            "overcapture": {
+                "status": "unavailable",
+                "maximum_amount_capturable": 500000
+            },
+            "installments": null,
+            "multicapture": {
+                "status": "unavailable"
+            },
+            "network_token": {
+                "used": false
+            },
+            "three_d_secure": null,
+            "regulated_status": "unregulated",
+            "amount_authorized": 500000,
+            "authorization_code": "053281",
+            "transaction_link_id": null,
+            "extended_authorization": {
+                "status": "disabled"
+            },
+            "network_transaction_id": "745680531207449",
+            "incremental_authorization": {
+                "status": "unavailable"
+            },
+            "electronic_commerce_indicator": "07"
+        },
+        "type": "card"
+    },
+    "failure_balance_transaction": null,
+    "statement_descriptor_suffix": null,
+    "calculated_statement_descriptor": "Stripe"
+}
+
+=== SOURCE: stripe | ENTITY: customers | ID: cus_VMAM1HOvvtovjS ===
+{
+    "id": "cus_VMAM1HOvvtovjS",
+    "name": "Acme Corporation",
+    "email": "sarah.johnson@acme.example",
+    "phone": null,
+    "object": "customer",
+    "address": null,
+    "balance": 0,
+    "created": 1790792097,
+    "currency": "usd",
+    "discount": null,
+    "livemode": false,
+    "metadata": {
+        "hubspot_company_id": "58819345672"
+    },
+    "shipping": null,
+    "delinquent": false,
+    "tax_exempt": "none",
+    "test_clock": null,
+    "description": null,
+    "default_source": null,
+    "invoice_prefix": "DCJ2M8MB",
+    "customer_account": null,
+    "invoice_settings": {
+        "footer": null,
+        "custom_fields": null,
+        "rendering_options": null,
+        "default_payment_method": "pm_1ULSFKCvIOVmaa3Ul2mN9b5Z"
+    },
+    "preferred_locales": [
+    ],
+    "next_invoice_sequence": 3
+}
+
+=== SOURCE: stripe | ENTITY: invoices | ID: in_1ULSBgCvIOVmaa3UhgzKKQaj ===
+{
+    "id": "in_1ULSBgCvIOVmaa3UhgzKKQaj",
+    "lines": {
+        "url": "/v1/invoices/in_1ULSBgCvIOVmaa3UhgzKKQaj/lines",
+        "data": [
+            {
+                "id": "il_1ULSBgCvIOVmaa3UmpdJerMD",
+                "taxes": [
+                ],
+                "amount": 500000,
+                "object": "line_item",
+                "parent": {
+                    "type": "subscription_item_details",
+                    "invoice_item_details": null,
+                    "subscription_item_details": {
+                        "proration": false,
+                        "invoice_item": null,
+                        "subscription": "sub_1ULSBgCvIOVmaa3Ukf412nh5",
+                        "proration_details": {
+                            "credited_items": null
+                        },
+                        "subscription_item": "si_VMAWGpJd8cnNSI"
+                    }
+                },
+                "period": {
+                    "end": 1793384704,
+                    "start": 1790792704
+                },
+                "invoice": "in_1ULSBgCvIOVmaa3UhgzKKQaj",
+                "pricing": {
+                    "type": "price_details",
+                    "price_details": {
+                        "price": "price_1ULRl5CvIOVmaa3UnmtwyHFv",
+                        "product": "prod_VMA5ZXkDnOX9rq"
+                    },
+                    "unit_amount_decimal": "500000"
+                },
+                "currency": "usd",
+                "livemode": false,
+                "metadata": {
+                    "hubspot_deal_id": "65516507983"
+                },
+                "quantity": 1,
+                "subtotal": 500000,
+                "discounts": [
+                ],
+                "description": "1 ├ù NovaTech Enterprise (at $5,000.00 / month)",
+                "discountable": true,
+                "discount_amounts": [
+                ],
+                "quantity_decimal": "1",
+                "pretax_credit_amounts": [
+                ]
+            }
+        ],
+        "object": "list",
+        "has_more": false,
+        "total_count": 1
+    },
+    "total": 500000,
+    "footer": null,
+    "issuer": {
+        "type": "self"
+    },
+    "number": "DCJ2M8MB-0002",
+    "object": "invoice",
+    "parent": {
+        "type": "subscription_details",
+        "quote_details": null,
+        "subscription_details": {
+            "metadata": {
+                "hubspot_deal_id": "65516507983"
+            },
+            "subscription": "sub_1ULSBgCvIOVmaa3Ukf412nh5"
+        }
+    },
+    "status": "paid",
+    "created": 1790792704,
+    "currency": "usd",
+    "customer": "cus_VMAM1HOvvtovjS",
+    "due_date": null,
+    "livemode": false,
+    "metadata": {
+    },
+    "subtotal": 500000,
+    "attempted": true,
+    "discounts": [
+    ],
+    "rendering": null,
+    "amount_due": 500000,
+    "period_end": 1790792704,
+    "test_clock": null,
+    "amount_paid": 500000,
+    "application": null,
+    "description": null,
+    "invoice_pdf": "https://pay.stripe.com/invoice/acct_1UJYmOCvIOVmaa3U/test_YWNjdF8xVUpZbU9DdklPVm1hYTNVLF9WTUFXazNLQWQzdnlQQ3FOVktnRGRRdTFMTTdzNDM0LDE4MTQwMjk2MQ0200k1YJytXK/pdf?s=ap",
+    "total_taxes": [
+    ],
+    "account_name": "├ürea restrita de Bluemetrics",
+    "auto_advance": false,
+    "effective_at": 1790792704,
+    "from_invoice": null,
+    "on_behalf_of": null,
+    "period_start": 1790792704,
+    "attempt_count": 1,
+    "automatic_tax": {
+        "status": null,
+        "enabled": false,
+        "provider": null,
+        "liability": null,
+        "disabled_reason": null
+    },
+    "custom_fields": null,
+    "customer_name": "Acme Corporation",
+    "shipping_cost": null,
+    "billing_reason": "subscription_create",
+    "customer_email": "sarah.johnson@acme.example",
+    "customer_phone": null,
+    "default_source": null,
+    "ending_balance": 0,
+    "receipt_number": null,
+    "account_country": "BR",
+    "account_tax_ids": null,
+    "amount_overpaid": 0,
+    "amount_shipping": 0,
+    "latest_revision": null,
+    "amount_remaining": 0,
+    "customer_account": null,
+    "customer_address": null,
+    "customer_tax_ids": [
+    ],
+    "payment_settings": {
+        "default_mandate": null,
+        "payment_method_types": null,
+        "payment_method_options": null
+    },
+    "shipping_details": null,
+    "starting_balance": 0,
+    "collection_method": "charge_automatically",
+    "customer_shipping": null,
+    "default_tax_rates": [
+    ],
+    "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UJYmOCvIOVmaa3U/test_YWNjdF8xVUpZbU9DdklPVm1hYTNVLF9WTUFXazNLQWQzdnlQQ3FOVktnRGRRdTFMTTdzNDM0LDE4MTQwMjk2MQ0200k1YJytXK?s=ap",
+    "status_transitions": {
+        "paid_at": 1790792704,
+        "voided_at": null,
+        "finalized_at": 1790792704,
+        "marked_uncollectible_at": null
+    },
+    "customer_tax_exempt": "none",
+    "total_excluding_tax": 500000,
+    "next_payment_attempt": null,
+    "statement_descriptor": null,
+    "webhooks_delivered_at": 1790792704,
+    "default_payment_method": null,
+    "subtotal_excluding_tax": 500000,
+    "total_discount_amounts": [
+    ],
+    "last_finalization_error": null,
+    "automatically_finalizes_at": null,
+    "total_pretax_credit_amounts": [
+    ],
+    "pre_payment_credit_notes_amount": 0,
+    "post_payment_credit_notes_amount": 0
+}
+
+=== SOURCE: stripe | ENTITY: payment_intents | ID: pi_3ULSBgCvIOVmaa3U0Jlu2dU1 ===
+{
+    "id": "pi_3ULSBgCvIOVmaa3U0Jlu2dU1",
+    "amount": 500000,
+    "object": "payment_intent",
+    "review": null,
+    "source": null,
+    "status": "succeeded",
+    "created": 1790792704,
+    "currency": "usd",
+    "customer": "cus_VMAM1HOvvtovjS",
+    "livemode": false,
+    "metadata": {
+    },
+    "shipping": null,
+    "processing": null,
+    "application": null,
+    "canceled_at": null,
+    "description": "Subscription creation",
+    "next_action": null,
+    "on_behalf_of": null,
+    "client_secret": "pi_3ULSBgCvIOVmaa3U0Jlu2dU1_secret_ag0bne37huV3UI3h6n2MSAVRS",
+    "latest_charge": "ch_3ULSBgCvIOVmaa3U0x5OFv9d",
+    "receipt_email": null,
+    "transfer_data": null,
+    "amount_details": {
+        "tip": {
+        }
+    },
+    "capture_method": "automatic",
+    "payment_method": "pm_1ULSBdCvIOVmaa3URZ3f8pPG",
+    "payment_record": null,
+    "transfer_group": null,
+    "amount_received": 500000,
+    "payment_details": {
+        "order_reference": "in_1ULSBgCvIOVmaa3UhgzKKQaj",
+        "customer_reference": null
+    },
+    "customer_account": null,
+    "managed_payments": {
+        "enabled": false
+    },
+    "amount_capturable": 0,
+    "last_payment_error": null,
+    "setup_future_usage": "off_session",
+    "cancellation_reason": null,
+    "confirmation_method": "automatic",
+    "payment_method_types": [
+        "card"
+    ],
+    "statement_descriptor": null,
+    "application_fee_amount": null,
+    "payment_method_options": {
+        "card": {
+            "network": null,
+            "installments": null,
+            "mandate_options": null,
+            "request_three_d_secure": "automatic"
+        }
+    },
+    "automatic_payment_methods": null,
+    "statement_descriptor_suffix": null,
+    "allowed_payment_method_types": null,
+    "shared_payment_granted_token": null,
+    "excluded_payment_method_types": null,
+    "payment_method_configuration_details": null
+}
+
